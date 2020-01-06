@@ -20,7 +20,7 @@ h1 {
     font-size: 16vw;
     font-weight: 900;
     line-height: 0.9;
-    margin: 10px 0 30px 0;
+    margin: 5px 0;
 }
 
 h2 {
@@ -51,12 +51,13 @@ h5 {
 
 p {
     font-size: 20px;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 hr {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #00448e;
     width: 100%;
+    margin: 20px 0;
 }
 
 .container {
@@ -73,7 +74,7 @@ hr {
 
 .content {
     width: 100%;
-    padding: 45px 6%;
+    padding: 70px 10%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -104,8 +105,7 @@ hr {
     }
     
     .content {
-        max-width: 1366px;
-        padding: 50px 10%;
+        padding: 80px 10%;
         align-items: center;
     }
 }
@@ -170,7 +170,7 @@ hr {
 
 .menu a {
     font-size: 70px;
-    font-weight: 400;
+    font-weight: 600;
     opacity: 0;
     transition: opacity 0.4s;
     margin: 4% 0%;
@@ -213,7 +213,6 @@ hr {
     .menu a {
         opacity: 1;
         font-size: 16px;
-        font-weight: 400;
         padding-left: 30px;
     }
 
@@ -310,7 +309,7 @@ hr {
 
 .quick-menu > a.second {
     grid-column: span 2;
-    background-color: #1751ff;
+    background-color: #1741ff;
     padding: 20% 10%;
     display: flex;
     flex-direction: column;
@@ -328,8 +327,16 @@ hr {
         width: 80%;
     }
     
+    .quick-menu a:hover {
+        background-color: red;
+    }
+    
     .quick-menu a.main h5 {
-        font-size: 45px
+        font-size: 55px
+    }
+    
+    .quick-menu a.second h5 {
+        font-size: 35px;
     }
 }
 
@@ -341,6 +348,10 @@ hr {
 }
 
 /*----------------------- Testimonials ----------------------- */
+
+.testimonials {
+    background-color: #003674;
+}
 
 .swiper2 .slide-content {
     padding: 40px 10%;
@@ -368,13 +379,22 @@ hr {
 
 @media(min-width:768px) {
     
+    .swiper2 {
+        width: 700px;
+        padding: 0;
+    }
+    
     .swiper2 .slide-content {
-        height: 50vh;
-        padding: 50px 10%;
+        height: ;
+        padding: 0;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+    
+    .customer {
+        margin: 40px;
     }
     
     .swiper2 .slide-content p {
@@ -398,6 +418,20 @@ hr {
 .contact-info a {
     font-size: 30px;
     margin-right: 10px;
+}
+
+@media(min-width:768px) {
+    .content.contact {
+        flex-direction: row;
+    }
+    
+    .content.contact h1 {
+        width: 50%;
+    }
+    
+    .contact-info {
+        width: 50%;
+    }
 }
 
 
