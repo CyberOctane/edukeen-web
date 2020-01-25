@@ -14,6 +14,7 @@ a, p, h1, h2, h3, h4, h5 {
 
 a {
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 h1 {
@@ -247,8 +248,17 @@ hr {
 }
 
 .swiper-slide img {
-    width: auto;
-    height: calc(100vh - 80px)
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media(min-width:768px) {
@@ -277,6 +287,12 @@ hr {
 /*----------------------- Quick menu ----------------------- */
 
 .quick-menu {
+    width: 100%; 
+    padding: 0;
+    background-color: #08164a;
+}
+
+.quick-menu-group {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -290,12 +306,13 @@ hr {
     padding: 10%;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s, padding-left 0.3s;
 }
 
-.quick-menu > a.main {
+.quick-menu-group > a.main {
     display: block;
     grid-column: span 3;
-    background-color: #1751ff;
+    background-color: #08164a;
 }
 
 .quick-menu a.main h5 {
@@ -307,9 +324,9 @@ hr {
     margin-bottom: 0;
 }
 
-.quick-menu > a.second {
+.quick-menu-group > a.second {
     grid-column: span 2;
-    background-color: #1741ff;
+    background-color: #08164a;
     padding: 20% 10%;
     display: flex;
     flex-direction: column;
@@ -323,20 +340,23 @@ hr {
 }
 
 @media(min-width:768px) {
-    .quick-menu {
+    .quick-menu-group {
         width: 80%;
     }
     
     .quick-menu a:hover {
         background-color: red;
+        padding-left: 21%;
     }
     
     .quick-menu a.main h5 {
-        font-size: 55px
+        font-size: 55px;
+        line-height: 1;
     }
     
     .quick-menu a.second h5 {
         font-size: 35px;
+        line-height: 1;
     }
 }
 
@@ -350,7 +370,7 @@ hr {
 /*----------------------- Testimonials ----------------------- */
 
 .testimonials {
-    background-color: #003674;
+    background-color: #08164a;
 }
 
 .swiper2 .slide-content {
@@ -359,7 +379,11 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #003674;
+    background-color: .footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #08164a;
+};
 }
 
 .customer {
@@ -440,8 +464,126 @@ hr {
 .footer {
     width: 100%;
     height: 10vh;
-    background-color: #00448e;
+    background-color: #08164a;
 }
+
+@media(min-width:768px) {
+    
+    .footer {
+        height: 25vh;
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------- courses page --------------------------- */
+/* ------------------------------------------------------------------ */
+
+.courses-head {
+    position: fixed;
+    z-index: -1;
+    top: 70px;
+    background-color: #08164a
+}
+
+.courses {
+    width: 100%;
+    background-color: white;
+    margin-top: calc(16vw + 140px);
+}
+.course-set {
+    position: relative;
+    display: block;
+}
+.course-title {
+    width: 100%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-list {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.course-set.open .course-list {
+    height: 100%;
+}
+
+.course-list p {
+    text-align: left;
+}
+
+@media(min-width:768px) {
+    
+    .course-title {
+        width: 700px;
+        border: none;
+        padding: 20px 0;
+        transition: padding 0.3s;
+    }
+
+    .course-title:hover {
+        background-color: antiquewhite;
+        padding: 20px;
+    }
+
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------- the form page -------------------------- */
+/* ------------------------------------------------------------------ */
+
+.form-page {
+    background-color: #08164a;
+    
+}
+
+form {
+    width: 100%;
+}
+
+.field {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+label,input {
+    display: block;
+}
+
+input {
+  -webkit-appearance: none; 
+  appearance: none;
+}
+
+label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+input[type=text], input[type=email] {
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    background-color: aqua;
+}
+
 
 
 /* ------------------------------------------------------------------ */
