@@ -14,7 +14,7 @@ a, p, h1, h2, h3, h4, h5 {
 
 a {
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 h1 {
@@ -108,6 +108,7 @@ hr {
     .content {
         padding: 80px 10%;
         align-items: center;
+        overflow: hidden;
     }
 }
 
@@ -254,11 +255,16 @@ hr {
     position: absolute;
     bottom: 0;
     z-index: 3;
-    background-color: white;
+    background-color: transparent;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.down-arrow h5, .down-arrow i {
+    color: white;
+    margin: 8px 0;
 }
 
 @media(min-width:768px) {
@@ -276,6 +282,19 @@ hr {
         width: 100vw;
         height: auto;
     }
+    
+    .down-arrow {
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .down-arrow h5, .down-arrow i {
+        color: #003674;
+        margin: 10px 0 0 0;
+    }
 }
 
 /*----------------------- Welcome ----------------------- */
@@ -289,7 +308,7 @@ hr {
 .quick-menu {
     width: 100%; 
     padding: 0;
-    background-color: #08164a;
+    background-color: red;
 }
 
 .quick-menu-group {
@@ -323,6 +342,11 @@ hr {
 .quick-menu a h4 {
     margin-bottom: 0;
 }
+
+.quick-menu a i {
+    font-size: 10px;
+}
+
 
 .quick-menu-group > a.second {
     grid-column: span 2;
@@ -365,12 +389,44 @@ hr {
 
 .apply {
     width: 100%;
+    background-image: url(../img/nik-macmillan-YXemfQiPR_E-unsplash.jpg);
+    background-size: cover;
+    align-items: center;
+}
+
+.apply a {
+    width: 100%;
+    background-color: white;
+    padding: 50px;
+}
+
+.apply h1 {
+    font-size: 95px;
+}
+
+@media(min-width:768px) {
+    
+    .apply {
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    .apply a {
+        width: auto;
+        padding: 70px;
+        align-items: center;
+    }
+    
+    .apply a:hover {
+        background-color: red;
+    }
 }
 
 /*----------------------- Testimonials ----------------------- */
 
 .testimonials {
     background-color: #08164a;
+    display: none;
 }
 
 .swiper2 .slide-content {
@@ -465,6 +521,7 @@ hr {
     width: 100%;
     height: 10vh;
     background-color: #08164a;
+    align-items: center;
 }
 
 @media(min-width:768px) {
@@ -482,7 +539,7 @@ hr {
     position: fixed;
     z-index: -1;
     top: 70px;
-    background-color: #08164a
+    background-color: #08164a;
 }
 
 .courses {
@@ -504,6 +561,15 @@ hr {
     justify-content: space-between;
 }
 
+.course-title:focus {
+    outline: none;
+}
+
+.course-title i {
+    color: #08164a;
+    transition: transform 0.3s;
+}
+
 .course-list {
     height: 0;
     overflow: hidden;
@@ -512,6 +578,10 @@ hr {
 
 .course-set.open .course-list {
     height: 100%;
+}
+
+.course-set.open i{
+    transform: rotate(180deg)
 }
 
 .course-list p {
@@ -528,8 +598,11 @@ hr {
     }
 
     .course-title:hover {
-        background-color: antiquewhite;
-        padding: 20px;
+        padding-left: 20px;
+    }
+    
+    .course-title:hover h3 {
+        color: red;
     }
 
 }
@@ -548,10 +621,7 @@ form {
 }
 
 .field {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 label,input {
@@ -565,23 +635,62 @@ input {
 
 label {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     color: white;
+    margin-bottom: 10px
 }
 
 input[type=text], input[type=email] {
-    width: 70%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid white;
     background-color: transparent;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     color: white;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+    outline: none;
+}
+
+select {
+    width: 70%;
+    padding: 10px;
+    border: 1px white solid;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
 }
 
 input[type=checkbox] {
     width: 20px;
     background-color: aqua;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+    background-color: red;
+}
+
+@media(min-width:768px) {
+    
+    .field {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        justify-content: space-between;
+    }
+    
+    input[type=text], input[type=email] {
+        width: 70%;
+        font-size: 25px;
+    }
+    
+    label {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -630,6 +739,10 @@ input[type=checkbox] {
 
 .guide-text {
     width: 100%;
+}
+
+.guide-text p {
+    text-align: left;
 }
 
 @media(min-width:768px) {
