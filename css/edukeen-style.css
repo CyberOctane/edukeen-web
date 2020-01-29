@@ -420,6 +420,10 @@ hr {
     .apply a:hover {
         background-color: red;
     }
+    
+    .apply a:hover h1, .apply a:hover h3, .apply a:hover i{
+        color: white;
+    }
 }
 
 /*----------------------- Testimonials ----------------------- */
@@ -663,14 +667,20 @@ select {
     cursor: pointer;
 }
 
-input[type=checkbox] {
-    width: 20px;
-    background-color: aqua;
+label.check {
     cursor: pointer;
+    width: 100%;
+    padding: 10px;
 }
 
-input[type=checkbox]:checked {
-    background-color: red;
+input[type=checkbox] {
+    width: 0px;
+    margin: 0;
+}
+
+input[type=checkbox]:checked + .check {
+  font-style: normal;
+    background-color: #0077ff;
 }
 
 @media(min-width:768px) {
