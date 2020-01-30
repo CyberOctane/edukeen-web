@@ -617,11 +617,11 @@ hr {
 
 .form-page {
     background-color: #08164a;
-    
 }
 
 form {
     width: 100%;
+    max-width: 800px;
 }
 
 .field {
@@ -667,10 +667,10 @@ select {
     cursor: pointer;
 }
 
-label.check {
-    cursor: pointer;
-    width: 100%;
-    padding: 10px;
+.check-field {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 input[type=checkbox] {
@@ -678,12 +678,38 @@ input[type=checkbox] {
     margin: 0;
 }
 
+label.check {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    transition: padding 0.3s, bakcground-color 0.3s;
+}
+
 input[type=checkbox]:checked + .check {
   font-style: normal;
     background-color: #0077ff;
 }
 
+.check-field i {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
 @media(min-width:768px) {
+    
+    form {
+        background-color: #081675;
+        padding: 80px;
+    }
     
     .field {
         display: flex;
@@ -698,8 +724,21 @@ input[type=checkbox]:checked + .check {
     }
     
     label {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 0;
+    }
+    
+    label.check:hover {
+        background-color: #081696;
+        padding-left: 20px;
+    } 
+    
+    input[type=submit]:hover {
+        outline: 2px solid #0077ff;
+    }
+    
+    input[type=submit]:active {
+        background-color: #0077ff;
     }
 }
 
