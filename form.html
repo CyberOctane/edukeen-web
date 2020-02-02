@@ -52,27 +52,30 @@
         <div class="form-content content">
             <form action="" method="">
                 <div class="field">
-                    <label for="name" >Name&nbsp;:&nbsp;</label>
-                    <input type="text" id="name" name="user_name">
+                    <input type="text" id="name" name="name" required >
+                    <label for="name">Your&nbsp;Name</label>
                 </div>
                 <div class="field">
-                    <label for="name" >Email</label>
-                    <input type="email" id="name" name="user_name">
+                    <input type="email" id="email" name="email" required>
+                    <label for="name" >Email&nbsp;Address</label>
                 </div>
                 <div class="field">
-                    <label for="name" >Contact Number</label>
-                    <input type="text" id="name" name="user_name">
+                    <input type="text" id="phone" name="phone" required>
+                    <label for="phone" >Contact&nbsp;Number</label>
                 </div>
-                <div class="field">
-                    <label for="name" >I am looking For...</label>
-                    <select required>
-                        <option>Under Graduate Studies</option>
-                        <option>Post Graduate Studies</option>
-                    </select>
-                </div>
-                <div class="field">
-                    <label for="name" >Area of Interest for studies</label>
-                    <input type="text" id="name" name="user_name">
+                <div class="study-info">
+                    <div class="field select-field">
+                        <label for="edu-type" >I am looking For...</label>
+                        <select id="edu-type"  required>
+                            <option>Under Graduate Studies</option>
+                            <option>Post Graduate Studies</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label for="name" >Area of Interest for studies</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
                 </div>
                 <div class="check-field">
                     <input type="checkbox" id="schol-check" name="user_name">
@@ -94,7 +97,12 @@
                     <label class="check" for="check-dependants" >Do you have any dependants</label>
                     <i class="fas fa-check"></i>
                 </div>
-                <input type="submit" id="name" name="user_name">
+                <div class="field">
+                    <input type="file" name="myFile">
+                </div>
+                <div class="field">
+                    <input type="submit" id="submit" name="submit">
+                </div>
             </form>
         </div>
         

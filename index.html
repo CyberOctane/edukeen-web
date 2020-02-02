@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    
+    <!-- Appearance -->
+    <meta name="theme-color" content="#08164a" />
 
     <title>EDUKEEN</title>
 
@@ -33,18 +36,19 @@
                 <img src="img/Edukeen-logo.svg">
             </a>
 
-            <a id="menu-btn">
-                menu
+            <a id="menu-btn" class="">
+                Menu&nbsp;&nbsp;<i class="fas fa-arrow-down"></i>
             </a>
 
             <div id="menu" class="menu">
                 <!--- nested again for menu-expand-animation-styles --->
                 <div class="menu-expander">
-                    <a href="courses.html" onclick="menuControl()">Courses</a>
-                    <a href="about.html" onclick="menuControl()">About&nbsp;us</a>
-                    <a href="guide.html" onclick="menuControl()">Guide</a>
-                    <a href="#Contact" onclick="menuControl()">contact</a>
-                    <a class="action"  href="form.html" onclick="menuControl()">Apply&nbsp;Now</a>
+                    <a href="courses.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Courses</a>
+                    <a href="about.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;About&nbsp;us</a>
+                    <a href="guide.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Guide</a>
+                    <a href="#Contact" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;contact</a>
+                    <hr>
+                    <a class="action"  href="form.html" onclick="menuControl()">Apply&nbsp;Now&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -105,7 +109,7 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <a>
+                        <a href="#" >
                             <picture>
                               <source media="(min-width: 768px)" srcset="img/work-visa.jpg">
                               <source media="(min-width: 0px)" srcset="img/work-visa-mobile.jpg">
@@ -114,7 +118,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a>
+                        <a href="#">
                             <picture>
                               <source media="(min-width: 768px)" srcset="img/Edu-sample.jpg">
                               <source media="(min-width: 0px)" srcset="img/Edu-sample-mobile.jpg">
@@ -123,7 +127,7 @@
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a>
+                        <a href="#">
                             <picture>
                               <source media="(min-width: 768px)" srcset="img/air-pick.jpg">
                               <source media="(min-width: 0px)" srcset="img/air-pick-mobile.jpg">
@@ -233,23 +237,27 @@
         <div id="Contact" class="content contact">
             <h1>Get<br>in touch</h1>
             <div class="contact-info">
-            <hr>
+                <hr>
                 <h3>+94 77 91 90 513 | +44 78 495 377 39</h3>
                 <hr>
-                <h3>info@edukeen.co.uk</h3>
-                <a href="https://www.facebook.com/aureumwedding/" target="_blank">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-                <a class="social"  href="#" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
+                <div class="contact-links">
+                    <h3>info@edukeen.co.uk</h3>
+                    <div>
+                        <a href="https://www.facebook.com/aureumwedding/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a class="social"  href="#" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         
         <!------------------------- Footer starts ------------------------->
         
         <div class="footer content">
-            <h4>Designed and developed by CYBER OCTANE</h4>
+            <a href="https://cyberoctane.com/" >Designed and developed by CYBER OCTANE</a>
         </div>
         
         

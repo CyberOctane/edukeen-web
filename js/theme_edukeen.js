@@ -7,4 +7,5 @@ menuBtn.addEventListener("click", menuControl);
 
 function menuControl() {
     menu.classList.toggle('open');
+    menuBtn.classList.toggle('open');
 }
