@@ -43,7 +43,16 @@
             <div id="menu" class="menu">
                 <!--- nested again for menu-expand-animation-styles --->
                 <div class="menu-expander">
-                    <a href="courses.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Courses</a>
+                    <div id="sub-menu" class="sub-menu">
+                        <a id="sub-menu-btn" class="sub-menu-btn"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Courses</a>
+                        <div id="sub-menu-drop" class="sub-menu-drop">
+                            <hr>
+                            <a href="courses.html" onclick="menuControl()" class="sub-link"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Under&nbsp;Graduate&nbsp;Courses</a>
+                            <hr class="pc-only">
+                            <a href="courses.html" onclick="menuControl()" class="sub-link"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Post&nbsp;Graduate&nbsp;Courses</a>
+                            <hr>
+                        </div>
+                    </div>
                     <a href="about.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;About&nbsp;us</a>
                     <a href="guide.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Guide</a>
                     <a href="#Contact" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;contact</a>
@@ -59,7 +68,7 @@
         
         <div class="hero">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/Edu-sample.jpg">
+              <source media="(min-width: 768px)" srcset="img/Edu-sample-tall.jpg">
               <source media="(min-width: 0px)" srcset="img/Edu-sample-mobile.jpg">
               <img src="img/Edu-sample.jpg">
             </picture>
@@ -120,7 +129,7 @@
                     <div class="swiper-slide">
                         <a href="#">
                             <picture>
-                              <source media="(min-width: 768px)" srcset="img/Edu-sample.jpg">
+                              <source media="(min-width: 768px)" srcset="img/Edu-sample-tall.jpg">
                               <source media="(min-width: 0px)" srcset="img/Edu-sample-mobile.jpg">
                               <img src="img/Edu-sample.jpg">
                             </picture> 
@@ -141,7 +150,8 @@
                 <h1>Explore the&nbsp;future</h1>
                 <p>
                     Are you planning on studying in UK?<br>
-                    We can help you find the best universities in UK, accomodation and work opportunities to acheive your educational goal...
+                    We help you in setting your career goals and help in obtaining admissions in appropriate undergraduate and post graduate programs. We render end to end services in career counselling, course selection, visa assistance. Our team is ready to go beyond to assist each individual in finding accommodation, work opportunities, airport pick up which would all be considered as a part of settling down in UK
+
 
                 </p>
             </div>
@@ -184,8 +194,11 @@
             <a href="form.html">
                 <h1>Let's<br>talk</h1>
                 <hr>
-                <h3>Apply for<br>a free consultation</h3>
-                <i class="fas fa-arrow-right"></i>
+                <div class="flex">   
+                    <h3>Apply for<br>For free counsel</h3>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <hr>
             </a>
             <picture class="back-img" >
               <source media="(min-width: 768px)" srcset="img/consult.jpg">
@@ -238,10 +251,14 @@
             <h1>Get<br>in touch</h1>
             <div class="contact-info">
                 <hr>
-                <h3>+94 77 91 90 513 | +44 78 495 377 39</h3>
+                <h5>+94 77 91 90 513 | +44 78 495 377 39</h5>
+                <hr>
+                <h5>
+                    61/4c, Nugagahalandha, Malapalla,&nbsp;Homagama 
+                </h5>
                 <hr>
                 <div class="contact-links">
-                    <h3>info@edukeen.co.uk</h3>
+                    <h5>info@edukeen.co.uk</h5>
                     <div>
                         <a href="https://www.facebook.com/aureumwedding/" target="_blank">
                             <i class="fab fa-facebook-square"></i>

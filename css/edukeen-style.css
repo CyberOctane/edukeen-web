@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -30,6 +31,7 @@ h3 {
     font-size: 20px;
     font-weight: 700;
     line-height: 1.1;
+    text-align: left;
 }
 
 h4 {
@@ -115,6 +117,16 @@ i.fa-arrow-right {
     width: 100%;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pc-only {
+    display: none;
+}
+
 
 @media(min-width:768px) {
     
@@ -154,6 +166,10 @@ i.fa-arrow-right {
     .action:hover {
         padding: 5px 10px ; 
         border: 2px solid #1751ff;
+    }
+    
+    .pc-only {
+        display: block;
     }
 }
 
@@ -227,17 +243,50 @@ i.fa-arrow-right {
     align-items: flex-start;
 }
 
-.menu a {
+.menu a, .menu h5 {
     color: white;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 700;
     opacity: 0;
     transition: opacity 0.4s, margin 0.6s;
+    cursor: pointer;
 }
 
-.menu.open a {
+.menu.open a , .menu.open h5 {
     opacity: 1;
+    margin-bottom: 22px;
+}
+
+.menu .sub-menu {
     margin-bottom: 25px;
+    width: 100%;
+}
+
+.menu .sub-menu-drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    height: 0px;
+    transition: height 0.3s;
+}
+
+.menu .sub-menu-drop.open {
+    height: 120px;
+}
+
+.menu .sub-link {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.menu.open .sub-link {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.menu .sub-menu-drop hr {
+    margin-bottom: 6px
 }
 
 .menu hr {
@@ -253,7 +302,7 @@ i.fa-arrow-right {
 .menu .action {
     width: 100%;
     padding: 10px 20px ;
-    border: 4px solid white;
+    border: 2px solid white;
 }
 
 
@@ -272,6 +321,7 @@ i.fa-arrow-right {
         background-color: white;
         flex-direction: row;
         align-items: center;
+        overflow: visible;
     }
     
     .menu hr {
@@ -291,11 +341,21 @@ i.fa-arrow-right {
         align-items: center;
     }
     
+    .menu .sub-menu {
+        position: relative;
+        margin-bottom: 0px;
+        padding-left: 0;
+    }
+    
     .menu a {
         color: #08164a;
         opacity: 1;
         font-size: 16px;
         margin-left: 20px;
+    }
+    
+    .sub-menu a {
+        margin-left: 0px;
     }
     
     .menu a:hover {
@@ -306,10 +366,36 @@ i.fa-arrow-right {
         display: none;
     }
     
+    .menu .sub-menu-drop {
+        position: absolute;
+        top: 120%;
+        height: 0px;
+        justify-content: center;
+        overflow: hidden;
+        transition: height 0.3s;
+        background-color: #f0f0f0;
+    }
+    
+    .menu .sub-menu:hover .sub-menu-drop {
+        height: 90px;
+    }
+    
+    .menu .sub-link {
+        font-size: 16px;
+        margin: 6px 16px;
+    }
+    
+    .menu .sub-menu-drop hr.pc-only {
+        border-bottom: 2px solid #1751ff;
+    }
+    
     .menu .action {
         width: auto;
         padding: 5px 10px ;
-        border: 2px solid #08164a;
+    }
+    
+    .menu .action:hover {
+        border: 2px solid #1751ff;
     }
 
     
@@ -325,7 +411,7 @@ i.fa-arrow-right {
     justify-content: center;
 }
 .hero img{
-    width: 100%;
+    width: 100vw;
 }
 
 .swiper-container {
@@ -415,6 +501,7 @@ i.fa-arrow-right {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #1751ff;
 }
 
 .welcome .news-swiper .swiper-slide img {
@@ -503,9 +590,17 @@ i.fa-arrow-right {
         width: 80%;
     }
     
+    .quick-menu a {
+        padding-left: 20%;
+    }
+    
+    .quick-menu-group > a.second {
+        padding-left: 20%;
+    }
+    
     .quick-menu a:hover {
         background-color: red;
-        padding-left: 21%;
+        padding-left: 25%;
     }
     
     .quick-menu a.main h5 {
@@ -540,7 +635,6 @@ i.fa-arrow-right {
 
 .apply i {
     font-size: 30px;
-    margin-top: 20px
 }
 
 @media(min-width:768px) {
@@ -548,16 +642,17 @@ i.fa-arrow-right {
     .apply {
         background-attachment: fixed;
         background-size: cover;
+        transition: padding 0.3s;
     }
     
     .apply a {
         width: auto;
-        padding: 70px;
+        padding: 60px;
         align-items: center;
     }
     
-    .apply a:hover {
-        background-color: red;
+    .apply a:hover  {
+        background-color: #1751ff;
     }
     
     .apply a:hover h1, .apply a:hover h3, .apply a:hover i{
@@ -633,14 +728,16 @@ i.fa-arrow-right {
     width: 100%;
 }
 
-.contact-info h3 {
-    font-size: 20px;
-    margin: 10px 0;
+.contact-info h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0;
 }
 
 .contact-links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .contact-info a {
@@ -662,6 +759,11 @@ i.fa-arrow-right {
     .contact-info {
         width: 50%;
     }
+    
+    .contact-info h5 {
+        font-size: 22px;
+    }
+
 }
 
 
@@ -687,6 +789,74 @@ i.fa-arrow-right {
         height: 15vh;
     }
 }
+
+
+/* ------------------------------------------------------------------ */
+/* ---------------------- Accordion styling ------------------------- */
+/* ------------------------------------------------------------------ */
+
+.panel {
+    position: relative;
+    display: block;
+}
+.panel-btn {
+    width: 100%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-btn:focus {
+    outline: none;
+}
+
+.panel-btn:active {
+    color: red;
+}
+
+.panel-btn i {
+    color: #08164a;
+    transition: transform 0.3s;
+}
+
+.folding {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.panel.open .panel-btn > i{
+    transform: rotate(180deg)
+}
+
+.folding p {
+    text-align: left;
+}
+
+@media(min-width:768px) {
+    .panel {
+        width: 700px;
+    }
+    .panel-btn {
+        border: none;
+        padding: 20px 0;
+        transition: padding 0.3s;
+    }
+
+    .panel-btn:hover {
+        padding-left: 20px;
+    }
+    
+    .panel-btn:hover h3, .panel-btn:hover i {
+        color: #1751ff;
+    }
+
+}
+
 
 /* ------------------------------------------------------------------ */
 /* ------------------------- courses page --------------------------- */
@@ -716,6 +886,7 @@ i.fa-arrow-right {
     background-color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .course-title:focus {
@@ -728,13 +899,9 @@ i.fa-arrow-right {
 }
 
 .course-list {
-    height: 0;
+    height: 0px;
     overflow: hidden;
     transition: height 0.3s;
-}
-
-.course-set.open .course-list {
-    height: 100%;
 }
 
 .course-set.open i{
@@ -758,8 +925,8 @@ i.fa-arrow-right {
         padding-left: 20px;
     }
     
-    .course-title:hover h3 {
-        color: red;
+    .course-title:hover h3, .course-title:hover i {
+        color: #1751ff;
     }
 
 }
@@ -956,6 +1123,12 @@ input[type=submit] {
 
 .about-page .img-holder {
     height: 50vh;
+}
+
+@media(min-width:768px) {
+    .content.about {
+        text-align: center;
+    }
 }
 
 

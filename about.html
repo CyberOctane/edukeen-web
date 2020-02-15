@@ -21,7 +21,7 @@
     
 <body>
     
-    <div class="container about-page">
+    <div class="container">
         
         <!------------------------- Navbar starts ------------------------->
         
@@ -30,17 +30,19 @@
                 <img src="img/Edukeen-logo.svg">
             </a>
 
-            <a id="menu-btn">
-                menu
+            <a id="menu-btn" class="">
+                Menu&nbsp;&nbsp;<i class="fas fa-arrow-down"></i>
             </a>
 
             <div id="menu" class="menu">
                 <!--- nested again for menu-expand-animation-styles --->
                 <div class="menu-expander">
-                    <a href="index.html" onclick="menuControl()">Home</a>
-                    <a href="about.html" onclick="menuControl()">About&nbsp;us</a>
-                    <a href="guide.html" onclick="menuControl()">Guide</a>
-                    <a href="index.html#contact" onclick="menuControl()">contact</a>
+                    <a href="courses.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Courses</a>
+                    <a href="about.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;About&nbsp;us</a>
+                    <a href="guide.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Guide</a>
+                    <a href="index.html#contact" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;contact</a>
+                    <hr>
+                    <a class="action"  href="form.html" onclick="menuControl()">Apply&nbsp;Now&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -60,14 +62,11 @@
         
         <div class="content about">
             
+            <h1>WE HELP YOU<br>EXPLORE<br>YOUR FUTURE </h1>
+            
             <p>
-                We are a Sri lankan / UK based education consultancy agency that ...
-                We have a wide range of universities within London and Outside London offering variety of courses to fulfill students educational goals. 
+                EduKeen is a Sri Lankan and UK based Education Consultancy agency that will help and counsel you find the right university based on your individual requirement. We will guide you through every step of the way 
             </p>
-            
-            <h2>Our background</h2>
-            
-            <h1>OUR SERVICES</h1>
             
             <h2>We help students find Universities  </h2>
             
@@ -81,7 +80,13 @@
                 Based on students university we can help you find accommodation close by, job opportunities, airport pick up and help you settle down to UK. 
             </p>
             
+            <h2>Our background</h2>
             
+        </div>
+        <!------------------------- Footer starts ------------------------->
+        
+        <div class="footer content">
+            <a href="https://cyberoctane.com/" >Designed and developed by CYBER OCTANE</a>
         </div>
         
     </div>
