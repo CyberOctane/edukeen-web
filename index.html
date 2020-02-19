@@ -47,9 +47,9 @@
                         <a id="sub-menu-btn" class="sub-menu-btn"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Courses</a>
                         <div id="sub-menu-drop" class="sub-menu-drop">
                             <hr>
-                            <a href="courses.html" onclick="menuControl()" class="sub-link"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Under&nbsp;Graduate&nbsp;Courses</a>
+                            <a href="Undergraduate.html" onclick="menuControl()" class="sub-link"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Under&nbsp;Graduate&nbsp;Courses</a>
                             <hr class="pc-only">
-                            <a href="courses.html" onclick="menuControl()" class="sub-link"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Post&nbsp;Graduate&nbsp;Courses</a>
+                            <a href="Postgraduate.html" onclick="menuControl()" class="sub-link"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Post&nbsp;Graduate&nbsp;Courses</a>
                             <hr>
                         </div>
                     </div>
@@ -72,43 +72,12 @@
               <source media="(min-width: 0px)" srcset="img/Edu-sample-mobile.jpg">
               <img src="img/Edu-sample.jpg">
             </picture>
-        </div> 
         
-        <div class="swiper-container hero-swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <h1>Study<br>in<br>UK</h1>
-                    <picture>
-                      <source media="(min-width: 768px)" srcset="img/Edu-sample.jpg">
-                      <source media="(min-width: 0px)" srcset="img/Edu-sample-mobile.jpg">
-                      <img src="img/Edu-sample.jpg">
-                    </picture>
-                </div>
-                <div class="swiper-slide">
-                    <h1>Study<br>in<br>UK</h1>
-                    <picture>
-                      <source media="(min-width: 768px)" srcset="img/Edu-sample.jpg">
-                      <source media="(min-width: 0px)" srcset="img/Edu-sample-mobile.jpg">
-                      <img src="img/Edu-sample.jpg">
-                    </picture> 
-                </div>
-                <div class="swiper-slide">
-                    <h1>Study<br>in<br>UK</h1>
-                    <picture>
-                      <source media="(min-width: 768px)" srcset="img/Edu-sample.jpg">
-                      <source media="(min-width: 0px)" srcset="img/Edu-sample-mobile.jpg">
-                      <img src="img/Edu-sample.jpg">
-                    </picture>
-                </div>
+            <div class="down-arrow">
+                <h5>Explore</h5>
+                <i class="fas fa-arrow-down"></i>
             </div>
-        </div>
-        
-        <div class="down-arrow">
-            <h5>Explore</h5>
-            <i class="fas fa-arrow-down"></i>
-        </div>
+        </div> 
         
         <!------------------------- Welcome Content starts ------------------------->
         
@@ -169,7 +138,7 @@
                 <h5>Post<br>graduate<br>studies</h5>
                 <h4>read more</h4>
             </a>
-            <a class="second" href="guide.html">
+            <a class="second" href="guide.html#scholarship">
                 <h5>Applying<br>for a<br>scholarship</h5>
                 <h4>read more</h4>
             </a>
@@ -247,7 +216,7 @@
         
         <!------------------------- Contact starts ------------------------->
         
-        <div id="Contact" class="content contact">
+        <div id="contact" class="content contact">
             <h1>Get<br>in touch</h1>
             <div class="contact-info">
                 <hr>
@@ -263,7 +232,7 @@
                         <a href="https://www.facebook.com/aureumwedding/" target="_blank">
                             <i class="fab fa-facebook-square"></i>
                         </a>
-                        <a class="social"  href="#" target="_blank">
+                        <a class="social row"  href="#" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -288,14 +257,6 @@
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     
     <script>
-        var mySwiper1 = new Swiper('.hero-swiper', {
-            speed: 1000,
-            spaceBetween:0,
-            loop: true,
-            autoplay: {
-                delay: 8000,
-            },
-        });
         
         var mySwiper3 = new Swiper('.news-swiper', {
             slidesPerView: 2,
@@ -303,7 +264,7 @@
             spaceBetween:0,
             loop: true,
             autoplay: {
-                delay: 3000,
+                delay: 1500,
             },
             breakpoints: {
             760: {

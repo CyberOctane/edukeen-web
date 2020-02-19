@@ -79,6 +79,8 @@ i.fa-arrow-right {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: 
+    font-weight: 700;
 }
     
 .action i {
@@ -86,10 +88,13 @@ i.fa-arrow-right {
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
+    min-height: 100vh;
 }
 
 .nav-space {
@@ -104,6 +109,32 @@ i.fa-arrow-right {
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
+}
+
+.content.hero-text {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 80px;
+    height: 20vh;
+    background-color: #1751ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content.hero-text h5 {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
+}
+
+.hero-space {
+    width: 100%;
+    height: 20vh;
 }
 
 .back-img {
@@ -158,14 +189,29 @@ i.fa-arrow-right {
         overflow: hidden;
     }
     
+    .content.hero-text {
+        height: 40vh;
+    }
+    
+    .content.hero-text h5 {
+        font-size: 80px;
+        line-height: 0.9;
+    }
+    
+    .hero-space {
+        height: 40vh;
+    }
+    
     .action {
         padding: 5px 10px ; 
         border: 2px solid #08164a;
     }
     
-    .action:hover {
+    a.action:hover {
         padding: 5px 10px ; 
         border: 2px solid #1751ff;
+        background-color: #1751ff;
+        color: white;
     }
     
     .pc-only {
@@ -392,10 +438,12 @@ i.fa-arrow-right {
     .menu .action {
         width: auto;
         padding: 5px 10px ;
+        border: 2px solid #08164a;
     }
     
     .menu .action:hover {
-        border: 2px solid #1751ff;
+        border: 2   px solid #1751ff;
+        color: white;
     }
 
     
@@ -404,6 +452,7 @@ i.fa-arrow-right {
 /*----------------------- Hero section ----------------------- */
 
 .hero {
+    position: relative;
     max-height: calc(100vh - 80px);
     overflow: hidden;
     display: flex;
@@ -418,35 +467,9 @@ i.fa-arrow-right {
     width: 100%;
 }
 
-.hero-swiper {
-    margin-top: 80px;
-    display: none;
-}
-
-.swiper-slide {
-    max-height: calc(100vh - 80px);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.swiper-slide h1 {
-    position: absolute;
-    left: 5%;
-    margin: 0;
-    font-size: 90px;
-    color: white;
-    text-align: left;
-}
-
-.swiper-slide img {
-    width: 100%;
-}
-
 .down-arrow {
     position: absolute;
-    bottom: 0;
+    bottom: 60px;
     z-index: 3;
     background-color: transparent;
     padding: 20px;
@@ -461,27 +484,10 @@ i.fa-arrow-right {
 }
 
 @media(min-width:768px) {
-    .swiper-slide {
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-    }
-    
-    .swiper-slide h1 {
-        font-size: 14vw;
-    }
-    
-    .swiper-slide img {
-        width: 100vw;
-        height: auto;
-    }
     
     .down-arrow {
+        bottom: 0px;
         background-color: white;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     
     .down-arrow h5, .down-arrow i {
@@ -767,7 +773,7 @@ i.fa-arrow-right {
 }
 
 
-/*----------------------- Footer ----------------------- */
+/*----------------------- Footer -----------------------*/
 
 .footer {
     width: 100%;
@@ -798,6 +804,7 @@ i.fa-arrow-right {
 .panel {
     position: relative;
     display: block;
+    background-color: white;
 }
 .panel-btn {
     width: 100%;
@@ -820,6 +827,7 @@ i.fa-arrow-right {
 
 .panel-btn i {
     color: #08164a;
+    margin-left: 10px;
     transition: transform 0.3s;
 }
 
@@ -829,12 +837,17 @@ i.fa-arrow-right {
     transition: height 0.3s;
 }
 
+.folding .content-wrap {
+    padding-bottom: 20px;
+}
+
 .panel.open .panel-btn > i{
-    transform: rotate(180deg)
+    transform: rotate(180deg);
 }
 
 .folding p {
     text-align: left;
+    margin-bottom: 20px;
 }
 
 @media(min-width:768px) {
@@ -865,68 +878,38 @@ i.fa-arrow-right {
 .courses-head {
     position: fixed;
     z-index: -1;
-    top: 70px;
+    top: 80px;
+    height: 20vh;
     background-color: #1751ff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.courses-head h5 {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    line-height: 1;
 }
 
 .courses {
-    width: 100%;
-    background-color: white;
-    margin-top: calc(16vw + 140px);
-}
-.course-set {
-    position: relative;
-    display: block;
-}
-.course-title {
-    width: 100%;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.course-title:focus {
-    outline: none;
-}
-
-.course-title i {
-    color: #08164a;
-    transition: transform 0.3s;
-}
-
-.course-list {
-    height: 0px;
-    overflow: hidden;
-    transition: height 0.3s;
-}
-
-.course-set.open i{
-    transform: rotate(180deg)
-}
-
-.course-list p {
-    text-align: left;
+    margin-top: 20vh;
 }
 
 @media(min-width:768px) {
     
-    .course-title {
-        width: 700px;
-        border: none;
-        padding: 20px 0;
-        transition: padding 0.3s;
-    }
-
-    .course-title:hover {
-        padding-left: 20px;
+    .courses-head {
+        height: 40vh;
+        padding: 0;
     }
     
-    .course-title:hover h3, .course-title:hover i {
-        color: #1751ff;
+    .courses-head h5 {
+        font-size: 80px;
+    }
+    
+    .courses {
+        margin-top: 40vh;
     }
 
 }
@@ -938,6 +921,15 @@ i.fa-arrow-right {
 .form-content {
     background-color: #08164a;
     padding: 0;
+}
+
+.form-content h1{
+    color: white;
+    padding: 20px 40px;
+}
+
+.form-content h4 {
+    padding: 10px 40px;
 }
 
 form {
@@ -995,7 +987,8 @@ input[type=text]:focus, input[type=email]:focus {
 }
 
 .study-info hr {
-    margin: 5px 0;
+    width: 80%;
+    margin: 5px 40px 0px 40px;
     border: none;
     border-bottom: #08164a solid 2px;
 }
@@ -1016,7 +1009,9 @@ select {
     align-items: center;
 }
 
-input[type=checkbox] {
+input[type=checkbox], input[type=file], input[type=submit] {
+    position: absolute;
+    visibility: hidden;
     width: 0px;
     margin: 0;
 }
@@ -1045,18 +1040,18 @@ input[type=checkbox]:checked ~ .fa-check {
     margin-left: 20px;
 }
 
+input[type=file] {
+    width: 0px;
+    position: absolute;
+}
+
 input[type=submit] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
 }
 
 @media(min-width:768px) {
     
     form {
         background-color: #081675;
-        padding: ;
     }
     
     .field {
@@ -1074,6 +1069,10 @@ input[type=submit] {
     }
     
     .study-info .field {
+        margin: 20px 80px;
+    }
+    
+    .study-info hr{
         padding: 20px 80px;
     }
     
@@ -1136,78 +1135,9 @@ input[type=submit] {
 /* ------------------------ the guide page -------------------------- */
 /* ------------------------------------------------------------------ */
 
-.content.guide-head {
-        padding-bottom: 0;
-    }
 
-.content.guide {
-    padding-top: 0;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.side-menu {
-    display: none;
-} 
-
-.guide-text {
-    width: 100%;
-}
-
-.guide-text p {
-    text-align: left;
-}
-
-.guide-text a {
-    font-weight: 700;
-    background-color: #081675;
-    padding: 10px;
-    color: white;
-}
-
-.guide-text a i{
-    font-size: 12px;
-}
 
 @media(min-width:768px) {
-    
-    .content.guide-head {
-        padding: 0;
-        padding-left: 400px;
-        align-items: flex-start;
-    }
-    
-    .side-menu {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        z-index: 2;
-        height: calc(100vh - 70px);
-        width: 400px;
-        padding: 0 2% 0 4%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: white;
-    }
-    
-    .side-menu a {
-        margin: 5px;
-    }
-    
-    .side-menu a:hover {
-        color: red;
-    }
-    
-    .content.guide {
-        padding: 0;
-        flex-direction: row;
-        align-items: flex-start
-    }
-    
-    .guide-text {
-        padding-left: 400px;
-    }
 }
 
 
