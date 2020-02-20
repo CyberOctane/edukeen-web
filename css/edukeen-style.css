@@ -17,7 +17,7 @@ h1 {
     font-size: 13vw;
     font-weight: 900;
     line-height: 0.9;
-    margin: 5px 0;
+    margin: 5px 0 20px 0;
 }
 
 h2 {
@@ -75,11 +75,11 @@ i.fa-arrow-right {
 
 .action {
     padding: 10px 20px ; 
-    border: 3px solid #08164a;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: 
+    background-color: #08164a;
+    color: white;
     font-weight: 700;
 }
     
@@ -154,6 +154,13 @@ i.fa-arrow-right {
     justify-content: space-between;
 }
 
+.flex-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .pc-only {
     display: none;
 }
@@ -167,15 +174,11 @@ i.fa-arrow-right {
     
     h1 {
         font-size: 6vw;
-        margin: 20px 0;
+        margin: 20px 0 40px 0;
     }
 
     h2 {
         font-size: 30px;
-    }
-
-    h3 {
-        font-size: 20px;
     }
     
     p {
@@ -203,13 +206,11 @@ i.fa-arrow-right {
     }
     
     .action {
-        padding: 5px 10px ; 
-        border: 2px solid #08164a;
+        padding: 5px 10px ;
     }
     
     a.action:hover {
-        padding: 5px 10px ; 
-        border: 2px solid #1751ff;
+        padding: 5px 10px ;
         background-color: #1751ff;
         color: white;
     }
@@ -332,7 +333,7 @@ i.fa-arrow-right {
 }
 
 .menu .sub-menu-drop hr {
-    margin-bottom: 6px
+    margin-bottom: 6px;
 }
 
 .menu hr {
@@ -347,8 +348,9 @@ i.fa-arrow-right {
 
 .menu .action {
     width: 100%;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     border: 2px solid white;
+    transition: background-color 0.3s;
 }
 
 
@@ -439,10 +441,11 @@ i.fa-arrow-right {
         width: auto;
         padding: 5px 10px ;
         border: 2px solid #08164a;
+        background-color: transparent;
     }
     
     .menu .action:hover {
-        border: 2   px solid #1751ff;
+        border: 2px solid #1751ff;
         color: white;
     }
 
@@ -512,6 +515,10 @@ i.fa-arrow-right {
 
 .welcome .news-swiper .swiper-slide img {
     width: 100%;
+}
+
+.intro {
+    text-align: center;
 }
 
 @media(min-width:768px) {
@@ -804,7 +811,6 @@ i.fa-arrow-right {
 .panel {
     position: relative;
     display: block;
-    background-color: white;
 }
 .panel-btn {
     width: 100%;
@@ -825,6 +831,10 @@ i.fa-arrow-right {
     color: red;
 }
 
+.panel-btn h3 {
+    transition: font-size 0.3s, padding 0.3s;
+}
+
 .panel-btn i {
     color: #08164a;
     margin-left: 10px;
@@ -839,6 +849,14 @@ i.fa-arrow-right {
 
 .folding .content-wrap {
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.panel.open .panel-btn h3 {
+    font-size: 30px;
+    padding: 20px 0;
 }
 
 .panel.open .panel-btn > i{
@@ -923,13 +941,16 @@ i.fa-arrow-right {
     padding: 0;
 }
 
+.form-content .content {
+    align-items: center;
+    text-align: center;
+}
+
 .form-content h1{
-    color: white;
-    padding: 20px 40px;
 }
 
 .form-content h4 {
-    padding: 10px 40px;
+    color:  #08164a;
 }
 
 form {
@@ -974,7 +995,7 @@ input[type=text]:focus, input[type=email]:focus {
 
 .study-info {
     margin: 30px 0;
-    padding: 10px 0;
+    padding: 12px 0;
     background-color: #083688;
 }
 
@@ -983,14 +1004,15 @@ input[type=text]:focus, input[type=email]:focus {
 }
 
 .study-info label {
-    margin-top: 0;;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .study-info hr {
     width: 80%;
-    margin: 5px 40px 0px 40px;
+    margin: 10px 40px 0px 40px;
     border: none;
-    border-bottom: #08164a solid 2px;
+    border-bottom: #081675 solid 2px;
 }
 
 select {
@@ -1001,6 +1023,10 @@ select {
     color: white;
     cursor: pointer;
     outline: none;
+}
+
+select option {
+    color: #08164a;
 }
 
 .check-field {
@@ -1022,6 +1048,8 @@ label.check {
     padding: 10px;
     border: 1px solid white;
     transition: padding 0.3s, bakcground-color 0.3s;
+    display: flex;
+    justify-content: space-between;
 }
 
 .check-field i {
@@ -1065,19 +1093,19 @@ input[type=submit] {
     
     label {
         font-size: 18px;
-        margin-bottom: 0;
+    }
+    
+    .study-info {
+        padding: 35px 0;
     }
     
     .study-info .field {
         margin: 20px 80px;
+        padding: 0;
     }
     
     .study-info hr{
-        padding: 20px 80px;
-    }
-    
-    select {
-        width: 70%;
+        margin: 40px 80px;
     }
     
     .check-field {
