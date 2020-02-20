@@ -956,7 +956,7 @@ i.fa-arrow-right {
 form {
     width: 100%;
     max-width: 800px;
-    padding-top: 40px;
+    padding: 40px 0;
 }
 
 .field {
@@ -1068,12 +1068,10 @@ input[type=checkbox]:checked ~ .fa-check {
     margin-left: 20px;
 }
 
-input[type=file] {
-    width: 0px;
-    position: absolute;
-}
-
-input[type=submit] {
+.check.submit {
+    text-align: center;
+    justify-content: center;
+    background-color: #083688;
 }
 
 @media(min-width:768px) {
@@ -1115,14 +1113,16 @@ input[type=submit] {
     label.check:hover {
         background-color: #081696;
         padding-left: 20px;
-    } 
-    
-    input[type=submit]:hover {
-        outline: 2px solid #0077ff;
     }
     
-    input[type=submit]:active {
-        background-color: #0077ff;
+    .check.submit:hover {
+        padding-left: 10px;
+        background-color: #0077ff;;
+        border: 1px solid #0077ff;
+    }
+    
+    .check.submit:active {
+        background-color: red;
     }
 }
 
