@@ -182,7 +182,7 @@ i.fa-arrow-right {
     }
     
     p {
-        text-align: center;
+        text-align: ;
         max-width: 900px;
     }
     
@@ -203,6 +203,10 @@ i.fa-arrow-right {
     
     .hero-space {
         height: 40vh;
+    }
+    
+    .text-body-wrap {
+        max-width: 900px;
     }
     
     .action {
@@ -1154,7 +1158,6 @@ input[type=checkbox]:checked ~ .fa-check {
 
 @media(min-width:768px) {
     .content.about {
-        text-align: center;
     }
 }
 

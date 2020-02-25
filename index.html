@@ -32,10 +32,34 @@
         <!------------------------- Navbar starts ------------------------->
         
         <div class="nav">
-            <a class="nav-logo" href="edu-home.html">
+            <a class="nav-logo" href="#home">
                 <img src="img/Edukeen-logo.svg">
             </a>
 
+            <a id="menu-btn" class="">
+                Menu&nbsp;&nbsp;<i class="fas fa-arrow-down"></i>
+            </a>
+
+            <div id="menu" class="menu">
+                <!--- nested again for menu-expand-animation-styles --->
+                <div class="menu-expander">
+                    <div id="sub-menu" class="sub-menu">
+                        <a id="sub-menu-btn" class="sub-menu-btn"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Courses</a>
+                        <div id="sub-menu-drop" class="sub-menu-drop">
+                            <hr>
+                            <a href="Undergraduate.html" onclick="menuControl()" class="sub-link"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Under&nbsp;Graduate&nbsp;Courses</a>
+                            <hr class="pc-only">
+                            <a href="Postgraduate.html" onclick="menuControl()" class="sub-link"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Post&nbsp;Graduate&nbsp;Courses</a>
+                            <hr>
+                        </div>
+                    </div>
+                    <a href="about.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;About&nbsp;us</a>
+                    <a href="guide.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Guide</a>
+                    <a href="#contact" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Contact</a>
+                    <hr>
+                    <a class="action"  href="form.html" onclick="menuControl()">Apply&nbsp;Now&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
         
         <div class="nav-space"></div>
@@ -58,12 +82,44 @@
         <!------------------------- Welcome Content starts ------------------------->
         
         <div class="welcome">
-            
-            <div class="content">
+            <div class="swiper-container news-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#" >
+                            <picture>
+                              <source media="(min-width: 768px)" srcset="img/work-visa.jpg">
+                              <source media="(min-width: 0px)" srcset="img/work-visa-mobile.jpg">
+                              <img src="img/Edu-sample.jpg">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <picture>
+                              <source media="(min-width: 768px)" srcset="img/Edu-sample-tall.jpg">
+                              <source media="(min-width: 0px)" srcset="img/Edu-sample-mobile.jpg">
+                              <img src="img/Edu-sample.jpg">
+                            </picture> 
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <picture>
+                              <source media="(min-width: 768px)" srcset="img/air-pick.jpg">
+                              <source media="(min-width: 0px)" srcset="img/air-pick-mobile.jpg">
+                              <img src="img/Edu-sample.jpg">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content intro">
                 <h1>Explore the&nbsp;future</h1>
                 <p>
-                    Are you planning on studying in UK?<br>
-                    We help you in setting your career goals and help in obtaining admissions in appropriate undergraduate and post graduate programs. We render end to end services in career counselling, course selection, visa assistance. Our team is ready to go beyond to assist each individual in finding accommodation, work opportunities, airport pick up which would all be considered as a part of settling down in UK
+                    Are you planning on studying in the UK?<br>
+                    We help you in setting your career goals and help in obtaining admissions in appropriate undergraduate and postgraduate programs. We render end to end services in career counseling, course selection, visa assistance. Our team is ready to go beyond to assist each individual in finding accommodation, work opportunities, airport pick up which would all be considered as a part of settling down in the UK
 
 
                 </p>
@@ -74,30 +130,87 @@
         
         <div class="quick-menu content">
             <div class="quick-menu-group">
-                <a class="main" href="#contact">
-                <h5>Under<br>graduate<br>studies</h5>
-                <h4>read more&nbsp;<span><i class="fas fa-arrow-right"></i></span></h4>
+                <a class="main" href="guide.html">
+                    <h5>Under<br>graduate<br>studies</h5>
+                    <h4>read more&nbsp;<span><i class="fas fa-arrow-right"></i></span></h4>
+                </a>
+                <a class="main" href="guide.html">
+                    <h5>Post<br>graduate<br>studies</h5>
+                    <h4>read more&nbsp;<span><i class="fas fa-arrow-right"></i></span></h4>
+                </a>
+                <a class="second" href="guide.html#scholarship">
+                    <h5>Applying<br>for a<br>scholarship</h5>
+                    <h4>read more&nbsp;<span><i class="fas fa-arrow-right"></i></span></h4>
+                </a>
+                <a class="second" href="guide.html">
+                    <h5>Find<br>accommodation<br>and work</h5>
+                    <h4>read more&nbsp;<span><i class="fas fa-arrow-right"></i></span></h4>
+                </a>
+                <a class="second" href="guide.html">
+                    <h5>For<br>married<br>couples</h5>
+                    <h4>read more&nbsp;<span><i class="fas fa-arrow-right"></i></span></h4>
+                </a>
+                    <a class="second third" href="guide.html">
+                    <h5>Job opportunities for Nurses</h5>
+                    <h4>read more&nbsp;<span><i class="fas fa-arrow-right"></i></span></h4>
+                </a>
+            </div>
+        </div>
+        
+        <!------------------------- Apply section starts ------------------------->
+        
+        <div class="apply content">
+            <a href="form.html">
+                <h1>Let's<br>talk</h1>
+                <hr>
+                <div class="flex">   
+                    <h3>Apply for<br>For free counsel</h3>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <hr>
             </a>
-            <a class="main" href="#contact">
-                <h5>Post<br>graduate<br>studies</h5>
-                <h4>read more</h4>
-            </a>
-            <a class="second" href="#contact">
-                <h5>Applying<br>for a<br>scholarship</h5>
-                <h4>read more</h4>
-            </a>
-            <a class="second" href="#contact">
-                <h5>Find<br>accommodation<br>and work</h5>
-                <h4>read more</h4>
-            </a>
-            <a class="second" href="#contact">
-                <h5>For<br>married<br>couples</h5>
-                <h4>read more</h4>
-            </a>
-                <a class="second third" href="#contact">
-                <h5>Job opportunities for Nurses</h5>
-                <h4>read more</h4>
-            </a>
+            <picture class="back-img" >
+              <source media="(min-width: 768px)" srcset="img/consult.jpg">
+              <source media="(min-width: 0px)" srcset="img/Edu-sample-mobile.jpg">
+              <img src="img/Edu-sample.jpg">
+            </picture>
+        </div>
+        
+        <!------------------------- Testimonials section starts ------------------------->
+        
+        <div class="content testimonials">
+            <div class="swiper-container swiper2">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="slide-content" >
+                            <div class="customer">
+                        </div>
+                        <p>
+                             “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.”
+                        </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content" >
+                            <div class="customer">
+                        </div>
+                        <p>
+                             “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.”
+                        </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content" >
+                            <div class="customer">
+                        </div>
+                        <p>
+                             “Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.”
+                        </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -115,6 +228,14 @@
                 <hr>
                 <div class="contact-links">
                     <h5>info@edukeen.co.uk</h5>
+                    <div>
+                        <a href="https://www.facebook.com/aureumwedding/" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a class="social row"  href="#" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
