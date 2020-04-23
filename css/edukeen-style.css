@@ -173,7 +173,7 @@ i.fa-arrow-right {
     }
     
     h1 {
-        font-size: 6vw;
+        font-size: 80px;
         margin: 20px 0 40px 0;
     }
 
@@ -605,6 +605,7 @@ i.fa-arrow-right {
     
     .quick-menu-group {
         width: 80%;
+        max-width: 1300px;
     }
     
     .quick-menu a {
