@@ -1044,7 +1044,14 @@ select option {
     align-items: center;
 }
 
-input[type=checkbox], input[type=file], input[type=submit] {
+input[type=checkbox], input[type=submit] {
+    position: absolute;
+    visibility: hidden;
+    width: 0px;
+    margin: 0;
+}
+
+input[type=file] {
     position: absolute;
     visibility: hidden;
     width: 0px;
