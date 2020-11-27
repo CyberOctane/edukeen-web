@@ -227,6 +227,10 @@ i.fa-arrow-right {
 
 /* ------------------------ Navbar ------------------------*/
 
+.nav-contact {
+    width: 100vw;
+    background-color: aqua}
+
 .nav {
     position: fixed;
     left: 0;

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>About Us | Edukeen</title>
+
+    <!-- Stylesheet -->
+    <link href="./css/edukeen-style.css" rel="stylesheet" type="text/css">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    
+</head>
+    
+<body>
+    
+    <div class="container">
+        
+        <!------------------------- Navbar starts ------------------------->
+        
+        <div class="nav">
+            <a class="nav-logo" href="index.html">
+                <img src="img/Edukeen-logo.svg">
+            </a>
+
+            <a id="menu-btn" class="">
+                Menu&nbsp;&nbsp;<i class="fas fa-arrow-down"></i>
+            </a>
+
+            <div id="menu" class="menu">
+                <!--- nested again for menu-expand-animation-styles --->
+                <div class="menu-expander">
+                    <div id="sub-menu" class="sub-menu">
+                        <a id="sub-menu-btn" class="sub-menu-btn"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Courses</a>
+                        <div id="sub-menu-drop" class="sub-menu-drop">
+                            <hr>
+                            <a href="Undergraduate.html" onclick="menuControl()" class="sub-link"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Under&nbsp;Graduate&nbsp;Courses</a>
+                            <hr class="pc-only">
+                            <a href="Postgraduate.html" onclick="menuControl()" class="sub-link"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Post&nbsp;Graduate&nbsp;Courses</a>
+                            <hr>
+                        </div>
+                    </div>
+                    <a href="about.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;About&nbsp;us</a>
+                    <a href="guide.html" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Guide</a>
+                    <a href="#contact" onclick="menuControl()"><i class="fas fa-arrow-right"></i>&nbsp;&nbsp;Contact</a>
+                    <hr>
+                    <a class="action"  href="form.html" onclick="menuControl()">Apply&nbsp;Now&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav-space"></div>
+        
+        <div class="hero about">
+        </div>
+        
+        <!------------------------- Content starts ------------------------->
+        
+        <picture class="back-img" >
+          <source media="(min-width: 768px)" srcset="img/nurse.jpg">
+          <source media="(min-width: 0px)" srcset="img/Edu-sample-mobile.jpg">
+          <img src="img/Edu-sample.jpg">
+        </picture>
+        
+        <div class="content about">
+            <div class="text-body-wrap">
+                <h1>PERMANENT NURSING RECRUITMENT<br>FOR THE UK </h1>
+
+                <h2>Eligibility:</h2>
+                <p>
+                    Nursing Degree or Diploma<br>
+                    B.Sc or GNM6<br>
+                    6 Months of clinical work experience<br>
+                    IELTS(Academic) score of 7 (E,S,L-7 & W-6.5)<br>
+                    OET Grade B in all 4 subjects 
+                </p>
+
+                <h2>Salary Benefits:</h2>
+
+                <p>
+                    Starting salary of £23,023 (5.2 Mn LKR p.a.)<br>
+                    In 2 years - £24,214 (5.5 Mn LKR p.a.)<br>
+                    In 3 years - £27,000 (6.2 Mn LKR p.a.)
+                </p>
+
+                <h2>Benefits:</h2>
+
+                <p>
+                    3 years of work visa<br>
+                    Flight tickets paid<br>
+                    Free OSCE training<br>
+                    The first attempt of OSCE fee paid<br>
+                    Accommodation & travel cost to OSCE test center<br>
+                    3 months of free accommodation<br>
+                    Opportunity to work extra hours and overtime<br>
+                    Family members(’dependants’) can come tothe UK
+                    on this VISA(they must apply for a UK VISA)<br>
+                    Settling in package sim card, grocery coupons, etc.<br>
+                    Paid annual leave of 27 days plus 8 public holidays<br>
+                    NHS pension and range of staff benefits<br>
+                    VISA allows for travel in and out of the UK multiple
+                    times<br>
+                    Mentor on hand during your entire journey to
+                    support your development and career<br>
+                    End to end support<br>
+                    Access to ongoing education and training while
+                    working in the NHS<br>
+                </p>
+            </div>
+        </div>
+        <!------------------------- Footer starts ------------------------->
+        
+        <div class="footer content">
+            <a href="https://cyberoctane.com/" >Designed and developed by CYBER OCTANE</a>
+        </div>
+        
+    </div>
+    
+    <!-- Main js file -->
+    <script src="js/theme_edukeen.js"></script>
+    
+</body>
