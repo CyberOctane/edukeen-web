@@ -482,14 +482,12 @@ i.fa-arrow-right {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: aqua;
 }
 
 .hero img {
+    display: block;
     width: 100vw;
-}
-
-.swiper-container {
-    width: 100%;
 }
 
 .down-arrow {
@@ -534,11 +532,25 @@ i.fa-arrow-right {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1751ff;
+    background-color: #002153;
+    background-size: cover;
+    background-position: center;
 }
 
 .welcome .news-swiper .swiper-slide img {
     width: 100%;
+}
+
+.welcome .news-swiper .slide-01 {
+    background-image: url(../img/visa-extended-landscape-2.jpg);
+}
+
+.welcome .news-swiper .slide-02 {
+    background-image: url(../img/consultancy-landscape.jpg);
+}
+
+.welcome .news-swiper .slide-03 {
+    background-image: url(../img/nursing-landscape.jpg);
 }
 
 .intro {
