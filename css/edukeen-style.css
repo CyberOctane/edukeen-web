@@ -238,12 +238,31 @@ i.fa-arrow-right {
 /* ------------------------ Navbar ------------------------*/
 
 .nav-contact {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    height: 40px;
     width: 100vw;
-    background-color: aqua
+    padding: 0 6%;
+    background-color: #002153;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-contact-info {
+    display: flex;
+}
+
+.nav-contact p, .nav-contact a {
+    color: white;
+    font-size: 14px;
+    margin-right: 24px;
 }
 
 .nav {
     position: fixed;
+    top: 40px;
     left: 0;
     z-index: 4;
     width: 100%;
@@ -551,6 +570,12 @@ i.fa-arrow-right {
 
 .welcome .news-swiper .slide-03 {
     background-image: url(../img/nursing-landscape.jpg);
+}
+
+.welcome .news-swiper .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: inherit;
 }
 
 .intro {
