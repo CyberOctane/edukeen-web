@@ -1109,24 +1109,35 @@ select option {
 
 .custom-select {
     position: relative;
-    width: 400px; 
+    margin: 10px 40px;
     color: white;
     font-family: sans-serif;
     cursor: pointer;
-}
-
-.cistom-select .selected {
-    background-color: DodgerBlue;
+    border: 1px solid white;
+    background-color: transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: white;
 }
 
 .custom-select select {
     display: none;
 } 
 
+.custom-select .select-selected {
+    padding: 20px;
+}
+
+.custom-select.open {
+    background-color: dodgerblue;
+}
+
 .custom-opt-lst {
     display: none;
     position: absolute;
-    background-color: red;
+    width: 100%;
+    padding: 10px;
+    background-color: dodgerblue;
 }
 
 .custom-select.open .custom-opt-lst {
@@ -1135,6 +1146,7 @@ select option {
 
 .custom-option {
     cursor: pointer;
+    padding: 10px;
 }
 
 form.non-nurse .not4nurse {
@@ -1208,6 +1220,20 @@ input[type=checkbox]:checked~.fa-check {
         padding: 20px 80px;
         justify-content: space-between;
     }
+    
+    .custom-select {
+        margin: 20px 80px;
+    }
+    
+    .custom-select .select-selected:hover {
+        background-color: #081696;
+        padding-left: 40px;
+    }
+    
+    .custom-select .custom-option:hover {
+        background-color: #081696;
+        padding-left: 40px;
+    }
 
     input[type=text],
     input[type=email] {
@@ -1243,7 +1269,6 @@ input[type=checkbox]:checked~.fa-check {
     .check.submit:hover {
         padding-left: 10px;
         background-color: #0077ff;
-        ;
         border: 1px solid #0077ff;
     }
 
