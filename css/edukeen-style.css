@@ -53,6 +53,7 @@ h4 {
 }
 
 h5 {
+    font-weight: 300;
     margin: 0;
     line-height: 1.1;
 }
@@ -63,7 +64,7 @@ p {
 }
 
 hr {
-    border-bottom: 1px solid #08164a;
+    border-bottom: 1px solid #002153;
     width: 100%;
     margin: 10px 0;
 }
@@ -735,6 +736,10 @@ i.fa-arrow-right {
     .apply a:hover i {
         color: white;
     }
+    
+    .apply a:hover hr {
+        border-bottom: 1px solid white;
+    }
 }
 
 /*----------------------- Testimonials ----------------------- */
@@ -810,7 +815,7 @@ i.fa-arrow-right {
 
 .contact-info h5 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 12px 0;
 }
 
@@ -841,7 +846,8 @@ i.fa-arrow-right {
     }
 
     .contact-info h5 {
-        font-size: 22px;
+        font-weight: 600;
+        font-size: 18px;
     }
 
 }
@@ -1087,7 +1093,7 @@ input[type=email]:focus {
     border-bottom: #081675 solid 2px;
 }
 
-select {
+/*select {
     width: 100%;
     padding: 10px;
     border: 1px white solid;
@@ -1099,6 +1105,44 @@ select {
 
 select option {
     color: #08164a;
+}*/
+
+.custom-select {
+    position: relative;
+    width: 400px; 
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.cistom-select .selected {
+    background-color: DodgerBlue;
+}
+
+.custom-select select {
+    display: none;
+} 
+
+.custom-opt-lst {
+    display: none;
+    position: absolute;
+    background-color: red;
+}
+
+.custom-select.open .custom-opt-lst {
+    display: block;
+}
+
+.custom-option {
+    cursor: pointer;
+}
+
+form.non-nurse .not4nurse {
+    display: none;
+}
+
+.not4nurse {
+    display: block;
 }
 
 .check-field {
