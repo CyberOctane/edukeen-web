@@ -812,8 +812,6 @@ i.fa-arrow-right {
         height: 10vh;
         background-color: #08164a;
     }
-
-    ;
 }
 
 .customer {
@@ -981,7 +979,7 @@ i.fa-arrow-right {
     .footer {
         flex-direction: row;
         justify-content: space-between;
-        padding: 50px;
+        padding: 50px 6%;
     }
     
     .footer-content {
