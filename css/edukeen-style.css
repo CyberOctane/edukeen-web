@@ -14,6 +14,7 @@ body {
 
 a,
 p,
+li,
 h1,
 h2,
 h3,
@@ -58,8 +59,9 @@ h5 {
     line-height: 1.1;
 }
 
-p {
+p, li {
     font-size: 20px;
+    line-height: 1.5em;
     margin: 5px 0;
 }
 
@@ -254,7 +256,7 @@ i.fa-arrow-right {
     top: 0;
     height: 40px;
     width: 100vw;
-    padding: 0 6%;
+    padding: 0 6.5%;
     background-color: #002153;
     display: flex;
     align-items: center;
@@ -266,10 +268,17 @@ i.fa-arrow-right {
     display: flex;
 }
 
-.nav-contact p, .nav-contact a {
+.nav-contact p {
     color: white;
     font-size: 14px;
     margin-right: 24px;
+}
+
+.nav-contact a  {
+    display: block;
+    color: white;
+    font-size: 14px;
+    margin-left: 24px;
 }
 
 .nav {
@@ -1400,4 +1409,11 @@ input[type=checkbox]:checked~.fa-check {
 
 
 
-@media(min-width:768px) {}
+/* ------------------------------------------------------------------ */
+/* ------------------------ Nursing page -------------------------- */
+/* ------------------------------------------------------------------ */
+
+
+
+
+
