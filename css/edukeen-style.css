@@ -982,6 +982,14 @@ i.fa-arrow-right {
     margin: 4px 0;
 }
 
+.cyber-octane {
+    font-size: 14px !important;
+}
+
+.cyber-octane a:hover {
+    color: #1751ff;
+}
+
 
 @media(min-width:768px) {
 
