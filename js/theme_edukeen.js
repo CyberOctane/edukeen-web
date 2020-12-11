@@ -18,6 +18,8 @@ subMenuBtn.addEventListener("click", function () {
 });
 
 
+
+
 var inputs = document.querySelectorAll('.inputfile');
 Array.prototype.forEach.call(inputs, function (input) {
     var label = input.nextElementSibling,
@@ -56,6 +58,9 @@ Array.prototype.forEach.call(inputs, function (input) {
         }
     });
 });
+
+
+
 
 
 var a, i, j, index;
