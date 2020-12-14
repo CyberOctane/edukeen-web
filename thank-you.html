@@ -4,20 +4,35 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="refresh" content="4; url='form.html'" />
-
-    <title>Courses | Edukeen</title>
-
-    <!-- Stylesheet -->
-    <link href="./css/edukeen-style.css" rel="stylesheet" type="text/css">
-
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&display=swap" rel="stylesheet">
-    <!-- font awsome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="true">
+    <!-- Page Title -->
+    <title>✔️ Success! Thank You</title>
+    <meta name="author" content="Cyberoctane" />
+    <!-- Appearance -->
+    <meta name="theme-color" content="#08164a" />
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-64x64.png" sizes="60x60">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon-180x180.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="canonical" href="https://www.edukeen.co.uk/">
+    <!-- DNS Prefetching -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+    <link rel="dns-prefetch" href="//unpkg.com" />
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="//www.google.com" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
+    <link rel="dns-prefetch" href="//www.gstatic.com" />
+    <!-- External CSS -->
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&display=swap">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/css/edukeen-style.css" type="text/css">
 
     <style>
         h1,
@@ -49,7 +64,6 @@
             align-content: center;
         }
     </style>
-
 </head>
 
 <body>
@@ -58,7 +72,7 @@
 
         <div class="nav">
             <a class="nav-logo" href="index.html">
-                <img src="img/Edukeen-logo.svg">
+                <img src="/img/Edukeen-logo.svg">
             </a>
         </div>
 
@@ -70,7 +84,7 @@
                 <h3>Thank you for get-in touch with us. We will get back to you ASAP.<br>Have a nice day!</h3>
                 <br>
                 <br>
-                <p>This page will be redirect in <span id="progressBar"></span></p>
+                <p>This page will be redirect in <span id="counter"></span></p>
             </div>
         </div>
     </div>
@@ -81,7 +95,7 @@
             if (timeleft <= 0) {
                 clearInterval(countdownTimer);
             }
-            document.getElementById("progressBar").innerHTML = timeleft + "s";
+            document.getElementById("counter").innerHTML = timeleft + "s";
             timeleft -= 1;
         }, 1000);
     </script>
