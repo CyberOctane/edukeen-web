@@ -1,0 +1,1 @@
+ScrollReveal().reveal('.wow', { delay: 250, reset: true, distance: '50px', });
