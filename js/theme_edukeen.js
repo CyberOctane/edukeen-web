@@ -110,8 +110,6 @@ customsel.classList.toggle("open");
 customsel.addEventListener("click", dropdown);
 
 
-
-
 /*
 var subMenuBtns = document.getElementsByClassName("sub-menu-btn");
 var menuDrop;
