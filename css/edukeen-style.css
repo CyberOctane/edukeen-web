@@ -215,7 +215,6 @@ i.fa-arrow-right {
     }
 
     p {
-        text-align: ;
         max-width: 900px;
     }
     
@@ -841,7 +840,6 @@ i.fa-arrow-right {
     }
 
     .swiper2 .slide-content {
-        height: ;
         padding: 0;
         display: flex;
         flex-direction: row;
@@ -926,8 +924,6 @@ i.fa-arrow-right {
     .contact-info a {
         margin: 0 0 0 25px;
     }
-
-
 }
 
 
@@ -957,7 +953,6 @@ i.fa-arrow-right {
     display: flex;
     width: 100%;
 }
-
 
 .footer-content div {
     padding-right: 10%;
@@ -1127,8 +1122,6 @@ i.fa-arrow-right {
     align-items: center;
     text-align: center;
 }
-
-.form-content h1 {}
 
 .form-content h4 {
     color: #08164a;
@@ -1408,21 +1401,6 @@ input[type=checkbox]:checked~.fa-check {
 .about-page .img-holder {
     height: 50vh;
 }
-
-@media(min-width:768px) {
-    .content.about {}
-}
-
-
-/* ------------------------------------------------------------------ */
-/* ------------------------ the guide page -------------------------- */
-/* ------------------------------------------------------------------ */
-
-
-
-/* ------------------------------------------------------------------ */
-/* ------------------------ Nursing page -------------------------- */
-/* ------------------------------------------------------------------ */
 
 
 

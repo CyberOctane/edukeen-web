@@ -63,23 +63,23 @@ Array.prototype.forEach.call(inputs, function (input) {
 
 
 
-var a, i, j, index;
+var a, j, k, index;
 
-customsel = document.getElementById("custom-select");
-selElmnt = customsel.getElementsByTagName("select")[0];
-selLength = selElmnt.length;
-form = document.getElementById("form");
+var customsel = document.getElementById("custom-select");
+var selElmnt = customsel.getElementsByTagName("select")[0];
+var selLength = selElmnt.length;
+var form = document.getElementById("form");
 
 a = document.createElement("DIV");
 a.setAttribute("class", "select-selected");
 a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
 customsel.appendChild(a);
 
-b = document.createElement("DIV");
+var b = document.createElement("DIV");
 b.setAttribute("class", "custom-opt-lst");
 
 for(j = 1; j < selLength; j++) {
-    c = document.createElement("DIV");
+    var c = document.createElement("DIV");
     c.setAttribute("class", "custom-option");
     c.innerHTML = selElmnt.options[j].innerHTML;
     
@@ -87,12 +87,12 @@ for(j = 1; j < selLength; j++) {
         form.classList.remove("non-nurse");
         for(k = 0; k < selLength; k++) {
             if (selElmnt.options[k].innerHTML == this.innerHTML ) {
-                originalOpt = selElmnt.options[k];
+                var originalOpt = selElmnt.options[k];
                 a.innerHTML = selElmnt.options[k].innerHTML;
                 index = k;
                 dropdown();
             }
-        }  
+        } 
         if (index == 3) {
             form.classList.add("non-nurse");
         }
@@ -104,7 +104,7 @@ for(j = 1; j < selLength; j++) {
 customsel.appendChild(b);
 
 function dropdown() {
-   customsel.classList.toggle("open");
+customsel.classList.toggle("open");
 }
 
 customsel.addEventListener("click", dropdown);
