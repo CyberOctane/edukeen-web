@@ -18,7 +18,7 @@ subMenuBtn.addEventListener("click", function () {
 });
 
 
-
+/////////// From Upload ///////////
 
 var inputs = document.querySelectorAll('.inputfile');
 Array.prototype.forEach.call(inputs, function (input) {
