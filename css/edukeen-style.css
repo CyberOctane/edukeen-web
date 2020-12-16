@@ -1402,6 +1402,32 @@ input[type=checkbox]:checked~.fa-check {
     height: 50vh;
 }
 
+/* ------------------------------------------------------------------ */
+/* --------------------------- 404 page ----------------------------- */
+/* ------------------------------------------------------------------ */
+
+.go-back {
+    padding: 10px 20px;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: #1f1f20;
+    font-weight: 700;
+    border: 2px solid #1f1f20;
+    transition: background-color 0.3s;
+}
+
+.go-back i {
+    font-size: 80%;
+}
+
+a.go-back:hover {
+    background-color: #1751ff;
+    color: white;
+}
+
 
 
 
