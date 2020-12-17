@@ -18,7 +18,7 @@ subMenuBtn.addEventListener("click", function () {
 });
 
 
-
+/////////// From Upload ///////////
 
 var inputs = document.querySelectorAll('.inputfile');
 Array.prototype.forEach.call(inputs, function (input) {
@@ -38,7 +38,7 @@ Array.prototype.forEach.call(inputs, function (input) {
     input.addEventListener('change', function (e) {
         var fileName = '';
 
-        if(this.files[0].size > 37888 ) {
+        if(this.files[0].size > 10485760 ) {
             alert("File is too big...! Maximum allowed size is 10MB");
             this.value = "";
         } else {

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://edukeen.co.uk/</loc>
+  <lastmod>2020-12-16T18:34:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://edukeen.co.uk/undergraduate.html</loc>
+  <lastmod>2020-12-16T18:34:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://edukeen.co.uk/postgraduate.html</loc>
+  <lastmod>2020-12-16T18:34:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://edukeen.co.uk/about.html</loc>
+  <lastmod>2020-12-16T18:34:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://edukeen.co.uk/guide.html</loc>
+  <lastmod>2020-12-16T18:34:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://edukeen.co.uk/form.html</loc>
+  <lastmod>2020-12-16T18:34:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://edukeen.co.uk/nursing.html</loc>
+  <lastmod>2020-12-16T18:34:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://edukeen.co.uk/index.html</loc>
+  <lastmod>2020-12-16T18:34:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
