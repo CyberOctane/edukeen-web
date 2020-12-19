@@ -18,7 +18,7 @@ subMenuBtn.addEventListener("click", function () {
 });
 
 
-/////////// From Upload ///////////
+/////////// From File Upload ///////////
 
 var inputs = document.querySelectorAll('.inputfile');
 Array.prototype.forEach.call(inputs, function (input) {
@@ -61,7 +61,7 @@ Array.prototype.forEach.call(inputs, function (input) {
 
 
 
-
+/////////// Custom From Styling ///////////
 
 var a, j, k, index;
 
