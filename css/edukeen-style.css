@@ -1081,6 +1081,10 @@ i.fa-arrow-right {
     margin-bottom: 20px;
 }
 
+.panel p {
+
+}
+
 @media(min-width:768px) {
     .panel {
         width: 700px;
